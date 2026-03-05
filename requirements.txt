@@ -1,0 +1,25 @@
+# MediAI — Dépendances (Python 3.10+ recommandé)
+# Pour le fine-tuning et l'inférence
+
+# Transformers & modèles
+transformers>=4.40.0
+datasets>=2.19.0
+sentencepiece
+accelerate>=0.29.0
+
+# QLoRA / PEFT
+peft>=0.10.0
+bitsandbytes>=0.43.0
+trl>=0.8.0
+
+# Évaluation
+evaluate
+rouge_score
+
+# Interface
+gradio>=4.0.0
+plotly>=5.18.0
+
+# Utilitaires (déjà souvent installés)
+torch>=2.0.0
+pandas
