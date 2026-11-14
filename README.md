@@ -66,12 +66,17 @@ npm ci
 
 ## Démarrage
 
-Sous Windows, lancez `demarrer.bat`. Sinon, ouvrez deux terminaux :
+Depuis la racine du projet :
 
 ```bash
-cd backend  && .venv/Scripts/python -m uvicorn app.main:app --host 127.0.0.1 --port 8000
-cd frontend && npm run dev
+npm run dev
 ```
+
+Cette commande applique les migrations, puis lance l'API (port 8000, rechargement automatique) et
+l'interface (port 3000) dans le même terminal, avec des journaux préfixés `[api]` et `[web]`. Ctrl+C arrête
+les deux. Si un ancien serveur MediAI occupe encore un port (terminal fermé sans Ctrl+C), il est arrêté
+automatiquement ; une autre application sur ce port provoque un message d'erreur, sans rien arrêter.
+Sous Windows, `demarrer.bat` fait la même chose et ouvre le navigateur.
 
 Ouvrez ensuite http://localhost:3000. Le compte défini par `DEFAULT_USER_EMAIL` et `DEFAULT_USER_PASSWORD`
 dans `backend/.env` est créé au premier démarrage.

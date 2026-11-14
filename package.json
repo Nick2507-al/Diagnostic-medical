@@ -1,0 +1,14 @@
+{
+  "name": "mediai",
+  "version": "2.0.0",
+  "private": true,
+  "description": "MediAI — lance le backend et le frontend ensemble",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "test": "cd backend && .venv\\Scripts\\python -m pytest",
+    "build": "npm run build --prefix frontend"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
