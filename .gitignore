@@ -16,3 +16,7 @@ next-env.d.ts
 # OS / editors
 .DS_Store
 Thumbs.db
+
+# Local tooling and reference material (not part of the app)
+/.claude/
+/design/
